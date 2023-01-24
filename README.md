@@ -32,8 +32,9 @@
   <div>
     <h2> Codewars </h2>
     <a href="https://www.codewars.com/users/pstnv"> <img src="https://www.codewars.com/users/pstnv/badges/large"></a>
+  </div>  
+  <div>
+    <h2> Контакты </h2>
+    <a href="mailto:pstnv@mail.ru"> <img src="https://pstnv.github.io/icons/icon_arrow.png" style="height:25px;"></a>
   </div>
 </section>
-
-
-    [![codewars](https://www.codewars.com/users/pstnv/badges/large)](https://www.codewars.com/users/pstnv)
