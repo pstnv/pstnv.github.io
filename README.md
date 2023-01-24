@@ -1,10 +1,10 @@
 <header style="margin-top: 70px; display:flex;flex-wrap: wrap;align-items: center;">
     <h1 style="margin: 0;border: none;"> Постнова Ирина </h1> <hr style="margin-left: 12px; flex:1; border-width: 3px; border-color:#999494;">
 </header>
-<section style="margin: 20px 0 60px; display:flex;flex-wrap: wrap;">
-  <div style="flex:1;">Привет! Меня зовут Ирина. Я веб-разработчик с опытом создания сайтов и приложений в 1+ год. </div>
-  <div style="flex:1;">За это время я изучила основы HTML5, CSS3, JavaScript, Bootstrap 5.0, Figma, GSAP3.</div>
-  <div style="flex:1;">В настоящее время я изучаю <strong> React, Node.JS, Redux. </strong></div>
+<section style="margin: 20px 0 60px;-webkit-column-count: 3; -moz-column-count: 3; column-count: 3; ">
+  <div>Я веб-разработчик с опытом создания сайтов и приложений в 1+ год. </div>
+  <div>За это время я изучила основы HTML5, CSS3, JavaScript, Bootstrap 5.0, Figma, GSAP3.</div>
+  <div>В настоящее время я изучаю <strong> React, Node.JS, Redux. </strong></div>
 </section>
 
 <section>
