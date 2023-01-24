@@ -1,12 +1,9 @@
 <h1> Постнова Ирина </h1>
 
 <section style="margin: 20px 0 60px;-webkit-column-count: 3; -moz-column-count: 3; column-count: 3; ">
-  <div>Я веб-разработчик с опытом создания сайтов и приложений в 1+ год. За это время я изучила основы HTML5, CSS3, JavaScript, Bootstrap 5.0, Figma, GSAP3.
-  В настоящее время я изучаю <strong> React, Node.JS, Redux. </strong></div>
-</section>
-
-<section>
-<img src="https://modnica.club/uploads/posts/2021-11/thumbs/1635977296_104-modnica-club-p-graficheskii-minimalizm-113.jpg" style="display:block;margin:0 auto;" alt="cover">
+  <p>Я веб-разработчик с опытом создания сайтов и приложений в 1+ год. За это время я изучила основы HTML5, CSS3, JavaScript, Bootstrap 5.0, Figma, GSAP3.</p>
+  <p>В настоящее время я изучаю <strong> React, Node.JS, Redux. </strong></p>
+  <img src="https://modnica.club/uploads/posts/2021-11/thumbs/1635977296_104-modnica-club-p-graficheskii-minimalizm-113.jpg" alt="Программирование">
 </section>
 
 <section style="margin: 70px 0; display:flex;flex-wrap: wrap;">
