@@ -6,14 +6,14 @@
   <img src="https://modnica.club/uploads/posts/2021-11/thumbs/1635977296_104-modnica-club-p-graficheskii-minimalizm-113.jpg" alt="Программирование">
 </section>
 
-<section style="margin: 70px 0; display:flex;flex-wrap: wrap;">
-  <div style="flex:1;">
+<section>
+  <div>
     <h2> Мои цели </h2>
-    <span style="display:block; margin: 6px 0;height:0; width:25px; border: 1px solid #999494;"> </span>
+<!--     <span style="display:block; margin: 6px 0;height:0; width:25px; border: 1px solid #999494;"> </span> -->
     <ul style="padding-left:0;">
-      <li style="margin: 10px 0;">глубленное изучение актуальных технологий и применение их на практике; </li>
-      <li style="margin: 10px 0;"> создание современных сайтов и приложений, понятных пользователю и адаптированных под мобильные устройства;</li>
-      <li style="margin: 10px 0;"> написание лаконичного и простого кода.</li>
+      <li> углубленное изучение актуальных технологий и применение их на практике; </li>
+      <li> создание современных сайтов и приложений, понятных пользователю и адаптированных под мобильные устройства;</li>
+      <li> написание лаконичного и простого кода.</li>
     </ul>
     </div>
   <div style="flex:1;">
