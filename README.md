@@ -7,13 +7,17 @@
 
 <section>
   <div>
+    <h2> Портфолио </h2>
+    <a href="" target="_blank" style="color:#000000;"> https://pstnv.github.io </a>
+  </div>
+  <div>
     <h2> Мои цели </h2>
     <ul>
       <li> углубленное изучение актуальных технологий и применение их на практике; </li>
       <li> создание современных сайтов и приложений, понятных пользователю и адаптированных под мобильные устройства;</li>
       <li> написание лаконичного и простого кода.</li>
     </ul>
-   </div>
+  </div>
   <div>
     <h2> Навыки </h2>
     <ul>
@@ -24,5 +28,5 @@
       <li><img src="https://pstnv.github.io/icons/techs/icon_figma.png" style="margin-right:15px;height:25px;" alt="HTML5"> Figma </li>
       <li><img src="https://pstnv.github.io/icons/techs/icon_gsap.png" style="margin-right:15px;height:25px;" alt="HTML5"> GSAP3 </li>
     </ul>
-    </div>
+  </div>
 </section>
