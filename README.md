@@ -31,6 +31,6 @@
   </div>
   <div>
     <h2> Codewars </h2>
-    <a href="https://www.codewars.com/users/pstnv/badges/large"> Me </a>
+    <a href="https://www.codewars.com/users/pstnv"> <img src="https://www.codewars.com/users/pstnv/badges/large"></a>
   </div>
 </section>
