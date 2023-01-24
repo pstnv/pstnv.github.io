@@ -17,12 +17,12 @@
   <div>
     <h2> Навыки </h2>
     <ul>
-      <li><img src="https://pstnv.github.io/icons/techs/icon_html.png" style="margin-right: 10px; height:20px;" alt="HTML5"> HTML5 </li>
-      <li><img src="https://pstnv.github.io/icons/techs/icon_css.png" style="margin-right: 10px; height:20px;" alt="HTML5"> CSS3 </li>
-      <li><img src="https://pstnv.github.io/icons/techs/icon_javascript.png" style="margin-right: 10px; height:20px;" alt="HTML5"> JavaScript </li>
-      <li><img src="https://pstnv.github.io/icons/techs/icon_bootstrap.png" style="margin-right: 10px; height:20px;" alt="HTML5"> Bootstrap </li>
-      <li><img src="https://pstnv.github.io/icons/techs/icon_figma.png" style="margin-right: 10px; height:20px;" alt="HTML5"> Figma </li>
-      <li><img src="https://pstnv.github.io/icons/techs/icon_gsap.png" style="margin-right: 10px; height:20px;" alt="HTML5"> GSAP3 </li>
+      <li><img src="https://pstnv.github.io/icons/techs/icon_html.png" style="margin-right:15px;height:25px;" alt="HTML5"> HTML5 </li>
+      <li><img src="https://pstnv.github.io/icons/techs/icon_css.png" style="margin-right:15px;height:25px;" alt="HTML5"> CSS3 </li>
+      <li><img src="https://pstnv.github.io/icons/techs/icon_javascript.png" style="margin-right:15px;height:25px;" alt="HTML5"> JavaScript </li>
+      <li><img src="https://pstnv.github.io/icons/techs/icon_bootstrap.png" style="margin-right:15px;height:25px;" alt="HTML5"> Bootstrap </li>
+      <li><img src="https://pstnv.github.io/icons/techs/icon_figma.png" style="margin-right:15px;height:25px;" alt="HTML5"> Figma </li>
+      <li><img src="https://pstnv.github.io/icons/techs/icon_gsap.png" style="margin-right:15px;height:25px;" alt="HTML5"> GSAP3 </li>
     </ul>
     </div>
 </section>
