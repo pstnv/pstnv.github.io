@@ -35,6 +35,6 @@
   </div>  
   <div>
     <h2> Контакты </h2>
-    <a href="mailto:pstnv@mail.ru"> <span style="color:red;"> pstnv@mail.ru </span> </a>
+    <a href="mailto:pstnv@mail.ru"> pstnv@mail.ru </a>
   </div>
 </section>
