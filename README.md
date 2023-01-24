@@ -8,7 +8,7 @@
 <section>
   <div>
     <h2> Портфолио </h2>
-    <a href="" target="_blank" style="color:#000000;"> https://pstnv.github.io </a>
+    <a href="https://pstnv.github.io"> https://pstnv.github.io </a>
   </div>
   <div>
     <h2> Мои цели </h2>
@@ -28,5 +28,9 @@
       <li><img src="https://pstnv.github.io/icons/techs/icon_figma.png" style="margin-right:15px;height:25px;" alt="HTML5"> Figma </li>
       <li><img src="https://pstnv.github.io/icons/techs/icon_gsap.png" style="margin-right:15px;height:25px;" alt="HTML5"> GSAP3 </li>
     </ul>
+  </div>
+  <div>
+    <h2> Codewars </h2>
+    <a href="https://www.codewars.com/users/pstnv/badges/large"> Me </a>
   </div>
 </section>
