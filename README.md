@@ -35,6 +35,6 @@
   </div>  
   <div>
     <h2> Контакты </h2>
-    <a href="mailto:pstnv@mail.ru"> <img src="https://pstnv.github.io/icons/icon_arrow.png" style="height:25px;"></a>
+    <a href="mailto:pstnv@mail.ru"> <img src="https://pstnv.github.io/icons/icon_arrow.png"></a>
   </div>
 </section>
