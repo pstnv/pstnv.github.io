@@ -1,4 +1,4 @@
-<header style="margin-top: 70px; display:flex;flex-wrap: wrap;align-items: center;">
+<header style="margin-top: 570px; display:flex;flex-wrap: wrap;align-items: center;">
     <h2 style="margin: 0;border: none;"> Постнова Ирина </h2> <hr style="margin-left: 12px; flex:1; border-width: 3px; border-color:#999494;">
 </header>
 <section style="margin: 20px 0 60px;-webkit-column-count: 3; -moz-column-count: 3; column-count: 3; ">
