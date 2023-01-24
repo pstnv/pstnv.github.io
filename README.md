@@ -1,9 +1,8 @@
 <h1> Постнова Ирина </h1>
 
 <section style="margin: 20px 0 60px;-webkit-column-count: 3; -moz-column-count: 3; column-count: 3; ">
-  <div>Я веб-разработчик с опытом создания сайтов и приложений в 1+ год. </div>
-  <div>За это время я изучила основы HTML5, CSS3, JavaScript, Bootstrap 5.0, Figma, GSAP3.</div>
-  <div>В настоящее время я изучаю <strong> React, Node.JS, Redux. </strong></div>
+  <div>Я веб-разработчик с опытом создания сайтов и приложений в 1+ год. За это время я изучила основы HTML5, CSS3, JavaScript, Bootstrap 5.0, Figma, GSAP3.
+  В настоящее время я изучаю <strong> React, Node.JS, Redux. </strong></div>
 </section>
 
 <section>
