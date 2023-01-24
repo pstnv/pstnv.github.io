@@ -32,6 +32,8 @@
   <div>
     <h2> Codewars </h2>
     <a href="https://www.codewars.com/users/pstnv"> <img src="https://www.codewars.com/users/pstnv/badges/large"></a>
-    [![codewars](https://www.codewars.com/users/pstnv/badges/large)](https://www.codewars.com/users/pstnv)
   </div>
 </section>
+
+
+    [![codewars](https://www.codewars.com/users/pstnv/badges/large)](https://www.codewars.com/users/pstnv)
