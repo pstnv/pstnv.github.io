@@ -1,5 +1,5 @@
 <header style="margin-top: 70px; display:flex;flex-wrap: wrap;align-items: center;">
-    <h1 style="margin: 0;border: none;"> Постнова Ирина </h1> <hr style="margin-left: 12px; flex:1; border-width: 3px; border-color:#999494;">
+    <h2 style="margin: 0;border: none;"> Постнова Ирина </h2> <hr style="margin-left: 12px; flex:1; border-width: 3px; border-color:#999494;">
 </header>
 <section style="margin: 20px 0 60px;-webkit-column-count: 3; -moz-column-count: 3; column-count: 3; ">
   <div>Я веб-разработчик с опытом создания сайтов и приложений в 1+ год. </div>
