@@ -2,7 +2,7 @@
   <h1> Постнова Ирина </h1>
   <p>Я веб-разработчик с опытом создания сайтов и приложений в 1+ год. За это время я изучила основы HTML5, CSS3, JavaScript, Bootstrap 5.0, Figma, GSAP3.</p>
   <p>В настоящее время я изучаю <strong> React, Node.JS, Redux. </strong></p>
-  <img src="https://modnica.club/uploads/posts/2021-11/thumbs/1635977296_104-modnica-club-p-graficheskii-minimalizm-113.jpg" alt="Программирование">
+  <img src="https://cdn.glitch.global/ece60b40-3830-4d48-bb12-fa238aabf422/portfolioscreen.png?v=1674721819365" alt="Программирование">
 </section>
 
 <section>
