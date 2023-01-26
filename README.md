@@ -21,12 +21,12 @@
   <div>
     <h2> Навыки </h2>
     <ul>
-      <li><img src="https://pstnv.github.io/icons/techs/icon_html.png" style="margin-right:15px;height:25px;" alt="HTML5"> HTML5 </li>
-      <li><img src="https://pstnv.github.io/icons/techs/icon_css.png" style="margin-right:15px;height:25px;" alt="HTML5"> CSS3 </li>
-      <li><img src="https://pstnv.github.io/icons/techs/icon_javascript.png" style="margin-right:15px;height:25px;" alt="HTML5"> JavaScript </li>
-      <li><img src="https://pstnv.github.io/icons/techs/icon_bootstrap.png" style="margin-right:15px;height:25px;" alt="HTML5"> Bootstrap </li>
-      <li><img src="https://pstnv.github.io/icons/techs/icon_figma.png" style="margin-right:15px;height:25px;" alt="HTML5"> Figma </li>
-      <li><img src="https://pstnv.github.io/icons/techs/icon_gsap.png" style="margin-right:15px;height:25px;" alt="HTML5"> GSAP3 </li>
+      <li><img src="https://cdn.glitch.global/ece60b40-3830-4d48-bb12-fa238aabf422/icon_html.png?v=1661103645712" style="margin-right:15px;height:25px;" alt="HTML5"> HTML5 </li>
+      <li><img src="https://cdn.glitch.global/ece60b40-3830-4d48-bb12-fa238aabf422/icon_css.png?v=1661103644661" style="margin-right:15px;height:25px;" alt="CSS3"> CSS3 </li>
+      <li><img src="https://cdn.glitch.global/ece60b40-3830-4d48-bb12-fa238aabf422/icon_javascript.png?v=1661103644680" style="margin-right:15px;height:25px;" alt="JavaScript"> JavaScript </li>
+      <li><img src="https://cdn.glitch.global/ece60b40-3830-4d48-bb12-fa238aabf422/icon_bootstrap.png?v=1661103645045" style="margin-right:15px;height:25px;" alt="Bootstrap "> Bootstrap </li>
+      <li><img src="https://cdn.glitch.global/ece60b40-3830-4d48-bb12-fa238aabf422/icon_figma.png?v=1661103644890" style="margin-right:15px;height:25px;" alt="Figma"> Figma </li>
+      <li><img src="https://cdn.glitch.global/ece60b40-3830-4d48-bb12-fa238aabf422/icon_gsap.png?v=1661103645307" style="margin-right:15px;height:25px;" alt="GSAP3"> GSAP3 </li>
     </ul>
   </div>
   <div>
