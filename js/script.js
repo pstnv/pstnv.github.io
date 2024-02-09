@@ -2,7 +2,6 @@
 const hiddenCards = document.querySelectorAll('.order');
 const showCards = document.querySelector('.showCards');
 let lastWidth = window.innerWidth;
-console.log('первая ширина ' + lastWidth);
 let elementOffset = showCards.offsetTop;
 let expanded = false;
 const hideCardsBtn= document.querySelector('.hideCards');
@@ -13,19 +12,14 @@ window.addEventListener('resize', () => {
     if (window.innerWidth !== lastWidth) {
         checkWidth ();
     };
-    console.log(window.innerWidth);
     lastWidth = window.innerWidth;
 });
 
 function checkWidth () {
     if (lastWidth <= 800 && expanded === true) {
-        console.log('случай 0');
-        console.log('ничего');
     }
     // 1 случай        
     else if (lastWidth <= 800 && expanded === false) {
-        console.log('случай 1');
-        console.log('прячем карточки');
         hiddenCards.forEach(card => {
         // 1. если экран меньше 800px, скрываем часть карточек
             // expanded = false;
@@ -40,7 +34,6 @@ function checkWidth () {
         // и отображать контейнер - "Скрыть"
         showCards.addEventListener('click', () => {
             expanded = true;
-            // console.log('случай 2');
             hiddenCards.forEach(card => {
                 card.style.display = 'block';
             });
@@ -52,7 +45,6 @@ function checkWidth () {
         
         hideCardsBtn.addEventListener('click', () => {
             // expanded = false;
-            // console.log('случай 3');
             hiddenCards.forEach(card => {
                 card.style.display = 'none';
             });
@@ -73,8 +65,6 @@ function checkWidth () {
     }
     // 2 случай
     else {
-        console.log('случай 2');
-        console.log(lastWidth);
         expanded = false;
             // если экран больше 800px и был ранее нажат контейнер "Отобразить скрытые"
             // отображаем карточки
