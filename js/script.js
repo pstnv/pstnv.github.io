@@ -5,27 +5,31 @@ let lastWidth = window.innerWidth;
 let elementOffset = showCards.offsetTop;
 let expanded = false;
 const hideCardsBtn = document.querySelector(".hideCards");
+const footer = document.querySelector(".parFooter");
 
 window.addEventListener("DOMContentLoaded", () => {
-    hiddenCards = document.querySelectorAll(".order");
-    if (!hiddenCards.length) {
-        return;
-    }
+    addCopyrightToFooter();
     checkWidth();
 });
 
-window.addEventListener("resize", () => {
+// window.addEventListener("resize", () => {
+//     if (window.innerWidth !== lastWidth) {
+//         checkWidth();
+//     }
+//     lastWidth = window.innerWidth;
+// });
+
+function addCopyrightToFooter() {
+    const today = new Date();
+    const year = today.getFullYear();
+    footer.textContent = `© ${year} @irinapstnv`;
+}
+
+function checkWidth() {
     hiddenCards = document.querySelectorAll(".order");
     if (!hiddenCards.length) {
         return;
     }
-    if (window.innerWidth !== lastWidth) {
-        checkWidth();
-    }
-    lastWidth = window.innerWidth;
-});
-
-function checkWidth() {
     if (lastWidth <= 800 && expanded === true) {
     }
     // 1 случай
