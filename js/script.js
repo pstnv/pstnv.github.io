@@ -126,7 +126,7 @@ function techsAnimate() {
     document.querySelector(".spanNews").textContent = "";
     gsap.to(".spanNews", {
         scrollTrigger: ".spanNews",
-        text: "React, Node.JS, Redux.",
+        text: "Node.JS, Express.",
         delay: 0.6,
         duration: 3,
         stagger: 0.5,
