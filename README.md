@@ -1,6 +1,6 @@
 <section>
   <h1>Постнова Ирина </h1>
-  <p>Я вечный студент и самоучка, изучаю программирование 2+ года. За это время я ознакомилась с основами HTML5, CSS3, JavaScript, React, Bootstrap, Figma, AOS, GSAP.</p>
+  <p>Я вечный студент и самоучка, изучаю программирование 2+ года. За это время я ознакомилась с основами HTML5, CSS3, JavaScript, React, Node.js, Express, Bootstrap, Figma, AOS, GSAP.</p>
   <p>В настоящее время я изучаю <strong> Node.JS, Express. </strong></p>
   <img src="https://cdn.glitch.global/ece60b40-3830-4d48-bb12-fa238aabf422/portfolioscreen.png?v=1674721819365" alt="Программирование">
   <p>Есть большое желание получить опыт работы над реальным проектом, развить и упрочить свои знания, быть в команде единомышленников.</p>
@@ -26,6 +26,8 @@
       <li><img src="https://pstnv.github.io/src/icons/techs/icon_css.png" valign="middle" style="margin-right:15px;height:25px;" alt="CSS3"> CSS3 </li>
       <li><img src="https://pstnv.github.io/src/icons/techs/icon_javascript.png" valign="middle" style="margin-right:15px;height:25px;" alt="JavaScript"> JavaScript </li>
       <li><img src="https://pstnv.github.io/src/icons/techs/icon_react.png" valign="middle" style="margin-right:15px;height:25px;" alt="React"> React </li>
+      <li><img src="https://pstnv.github.io/src/icons/techs/icon_node.png" valign="middle" style="margin-right:15px;height:25px;" alt="Node.js"> Node.js </li>
+      <li><img src="https://pstnv.github.io/src/icons/techs/icon_express.png" valign="middle" style="margin-right:15px;height:25px;" alt="Express"> Express </li>
       <li><img src="https://pstnv.github.io/src/icons/techs/icon_bootstrap.png" valign="middle" style="margin-right:15px;height:25px;" alt="Bootstrap "> Bootstrap </li>
       <li><img src="https://pstnv.github.io/src/icons/techs/icon_figma.png" valign="middle" style="margin-right:15px;height:25px;" alt="Figma"> Figma </li>
       <li><img src="https://pstnv.github.io/src/icons/techs/icon_gsap.png" valign="middle" style="margin-right:15px;height:25px;" alt="GSAP3"> GSAP3 </li>
