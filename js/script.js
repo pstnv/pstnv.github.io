@@ -73,17 +73,12 @@ window.addEventListener("click", (event) => {
 });
 
 // если пользователь кликнул на отправку формы, при переходе со страницы форма будет очищена
-const btnSubmit = getElement("#submit");
-btnSubmit.addEventListener("click", () => {
+const form = getElement("form");
+form.addEventListener("submit", () => {
     window.addEventListener("unload", () => {
-        resetForm();
+        form.reset();
     });
 });
-
-//функция очистки полей
-function resetForm() {
-    getElement(".formStyle").reset();
-}
 
 // scroll в начало страницы
 const linkHome = getElement(".linkHome");
