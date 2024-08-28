@@ -1,17 +1,11 @@
 import getElement from "./utils/getElement.js";
+import addCopyrightToFooter from "./utils/addCopyrightToFooter.js";
 
 window.addEventListener("DOMContentLoaded", () => {
+    // добавить copyright в футер
     addCopyrightToFooter();
     techsAnimate();
 });
-
-// добавить copyright в футер
-const footer = getElement(".parFooter");
-function addCopyrightToFooter() {
-    const today = new Date();
-    const year = today.getFullYear();
-    footer.textContent = `© ${year} @irinapstnv`;
-}
 
 // инициализируем анимацию AOS
 AOS.init({
