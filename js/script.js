@@ -1,102 +1,14 @@
-// скрыть часть карточек при ширине экрана меньше 800px
-let hiddenCards = [];
-const showCards = document.querySelector(".showCards");
-let lastWidth = window.innerWidth;
-let elementOffset = showCards.offsetTop;
-let expanded = false;
-const hideCardsBtn = document.querySelector(".hideCards");
 const footer = document.querySelector(".parFooter");
 
 window.addEventListener("DOMContentLoaded", () => {
     addCopyrightToFooter();
-    checkWidth();
+    techsAnimate();
 });
-
-// window.addEventListener("resize", () => {
-//     if (window.innerWidth !== lastWidth) {
-//         checkWidth();
-//     }
-//     lastWidth = window.innerWidth;
-// });
 
 function addCopyrightToFooter() {
     const today = new Date();
     const year = today.getFullYear();
     footer.textContent = `© ${year} @irinapstnv`;
-}
-
-function checkWidth() {
-    hiddenCards = document.querySelectorAll(".order");
-    if (!hiddenCards.length) {
-        return;
-    }
-    if (lastWidth <= 800 && expanded === true) {
-    }
-    // 1 случай
-    else if (lastWidth <= 800 && expanded === false) {
-        hiddenCards.forEach((card) => {
-            // 1. если экран меньше 800px, скрываем часть карточек
-            // expanded = false;
-            card.style.order = "1";
-            card.style.display = "none";
-        });
-        // и отображаем контейнер - "Отобразить скрытые"
-        showCards.style.display = "flex";
-
-        //2. ставим подслушку на контейнер - при нажатии отображать скрытые карточки
-        // и скрывать контейнер - "Отобразить скрытые"
-        // и отображать контейнер - "Скрыть"
-        showCards.addEventListener("click", () => {
-            expanded = true;
-            hiddenCards.forEach((card) => {
-                card.style.display = "block";
-            });
-            showCards.style.display = "none";
-            hideCardsBtn.style.display = "flex";
-            hideCardsBtn
-                .querySelector(".figureArrow")
-                .classList.add("scalefigureArrow");
-        });
-
-        hideCardsBtn.addEventListener("click", () => {
-            // expanded = false;
-            hiddenCards.forEach((card) => {
-                card.style.display = "none";
-            });
-            showCards.style.display = "flex";
-            hideCardsBtn.style.display = "none";
-            hideCardsBtn
-                .querySelector(".figureArrow")
-                .classList.remove("scalefigureArrow");
-
-            // возвращаемся (делаем скролл вверх) до контейнера "Отобразить скрытые"
-            // определяем расстояние от текущего положения до контейнера "Отобразить скрытые"
-            let elementOffset = showCards.offsetTop;
-            // определяем величину margin-top контейнера "Отобразить скрытые"
-            const style = getComputedStyle(showCards);
-            let elementMarginTop = parseInt(style.marginTop, 10);
-            // делаем скролл на расстояние минус 20px на margin-top
-            window.scrollTo({ top: elementOffset - elementMarginTop }) ||
-                document.documentElement.scrollTo({
-                    top: elementOffset - elementMarginTop,
-                });
-        });
-    }
-    // 2 случай
-    else {
-        expanded = false;
-        // если экран больше 800px и был ранее нажат контейнер "Отобразить скрытые"
-        // отображаем карточки
-        hiddenCards.forEach((card) => {
-            card.style.order = "initial";
-            card.style.display = "block";
-        });
-        showCards.style.display = "none";
-        hideCardsBtn.style.display = "none";
-        hideCardsBtn
-            .querySelector(".figureArrow")
-            .classList.remove("scalefigureArrow");
-    }
 }
 
 // инициализируем анимацию AOS
@@ -135,7 +47,6 @@ function techsAnimate() {
         // repeatDelay: -5
     });
 }
-techsAnimate();
 
 const aboutLink = document.querySelector("#aboutLink");
 aboutLink.addEventListener("click", techsAnimate);

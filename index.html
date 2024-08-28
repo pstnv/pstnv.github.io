@@ -431,76 +431,6 @@
 						</div>
 					</div>
 				</div> -->
-                <div class="showCards">
-                    <p class="expandCards">Отобразить скрытые</p>
-                    <div class="figure">
-                        <svg
-                            class="figureBackSVG"
-                            viewbox="18 21 57 58"
-                            xmlns="http://www.w3.org/2000/svg"
-                            version="1.1"
-                        >
-                            <path
-                                d="M15.7,-18.3C20.1,-14.9,23.5,-9.8,24,-4.6C24.6,0.7,22.3,6.1,19.7,12.2C17.2,18.2,14.3,24.9,9.5,27.2C4.6,29.4,-2.3,27.3,-7.9,24.2C-13.5,21.1,-17.9,16.9,-22.1,11.7C-26.4,6.5,-30.7,0.2,-31.4,-7.3C-32.2,-14.7,-29.5,-23.3,-23.7,-26.5C-17.8,-29.7,-8.9,-27.6,-1.7,-25.6C5.6,-23.6,11.2,-21.8,15.7,-18.3Z"
-                                transform="translate(50 50)"
-                                stroke-width="0"
-                                style="transition: all 0.3s ease 0s"
-                            ></path>
-                        </svg>
-                        <svg
-                            class="figureFrontSVG"
-                            viewbox="18 21 57 58"
-                            xmlns="http://www.w3.org/2000/svg"
-                            version="1.1"
-                        >
-                            <path
-                                d="M15.7,-18.3C20.1,-14.9,23.5,-9.8,24,-4.6C24.6,0.7,22.3,6.1,19.7,12.2C17.2,18.2,14.3,24.9,9.5,27.2C4.6,29.4,-2.3,27.3,-7.9,24.2C-13.5,21.1,-17.9,16.9,-22.1,11.7C-26.4,6.5,-30.7,0.2,-31.4,-7.3C-32.2,-14.7,-29.5,-23.3,-23.7,-26.5C-17.8,-29.7,-8.9,-27.6,-1.7,-25.6C5.6,-23.6,11.2,-21.8,15.7,-18.3Z"
-                                transform="translate(50 50)"
-                                stroke-width="0"
-                                style="transition: all 0.3s ease 0s"
-                            ></path>
-                        </svg>
-                        <img
-                            class="figureArrow"
-                            src="src/icons/icon_showHidden.png"
-                        />
-                    </div>
-                </div>
-                <div class="hideCards">
-                    <p class="expandCards">Скрыть</p>
-                    <div class="figure">
-                        <svg
-                            class="figureBackSVG"
-                            viewbox="18 21 57 58"
-                            xmlns="http://www.w3.org/2000/svg"
-                            version="1.1"
-                        >
-                            <path
-                                d="M15.7,-18.3C20.1,-14.9,23.5,-9.8,24,-4.6C24.6,0.7,22.3,6.1,19.7,12.2C17.2,18.2,14.3,24.9,9.5,27.2C4.6,29.4,-2.3,27.3,-7.9,24.2C-13.5,21.1,-17.9,16.9,-22.1,11.7C-26.4,6.5,-30.7,0.2,-31.4,-7.3C-32.2,-14.7,-29.5,-23.3,-23.7,-26.5C-17.8,-29.7,-8.9,-27.6,-1.7,-25.6C5.6,-23.6,11.2,-21.8,15.7,-18.3Z"
-                                transform="translate(50 50)"
-                                stroke-width="0"
-                                style="transition: all 0.3s ease 0s"
-                            ></path>
-                        </svg>
-                        <svg
-                            class="figureFrontSVG"
-                            viewbox="18 21 57 58"
-                            xmlns="http://www.w3.org/2000/svg"
-                            version="1.1"
-                        >
-                            <path
-                                d="M15.7,-18.3C20.1,-14.9,23.5,-9.8,24,-4.6C24.6,0.7,22.3,6.1,19.7,12.2C17.2,18.2,14.3,24.9,9.5,27.2C4.6,29.4,-2.3,27.3,-7.9,24.2C-13.5,21.1,-17.9,16.9,-22.1,11.7C-26.4,6.5,-30.7,0.2,-31.4,-7.3C-32.2,-14.7,-29.5,-23.3,-23.7,-26.5C-17.8,-29.7,-8.9,-27.6,-1.7,-25.6C5.6,-23.6,11.2,-21.8,15.7,-18.3Z"
-                                transform="translate(50 50)"
-                                stroke-width="0"
-                                style="transition: all 0.3s ease 0s"
-                            ></path>
-                        </svg>
-                        <img
-                            class="figureArrow"
-                            src="src/icons/icon_showHidden.png"
-                        />
-                    </div>
-                </div>
             </div>
         </div>
         <!-- ОБО МНЕ -->
@@ -640,7 +570,8 @@
                         type="text"
                         name="name"
                         placeholder="Имя"
-                        required=""
+                        required="true"
+                        autocomplete="false"
                         data-aos="fade-left"
                         data-aos-offset="100"
                         data-aos-delay="150"
@@ -653,7 +584,8 @@
                         type="email"
                         name="email"
                         placeholder="Email"
-                        required=""
+                        required="true"
+                        autocomplete="false"
                         data-aos="fade-right"
                         data-aos-offset="100"
                         data-aos-delay="250"
@@ -665,7 +597,7 @@
                         class="inputArea"
                         name="message"
                         placeholder="Ваше сообщение"
-                        required=""
+                        required="true"
                         data-aos="fade-left"
                         data-aos-offset="100"
                         data-aos-delay="150"
