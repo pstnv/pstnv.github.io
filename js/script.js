@@ -1,35 +1,21 @@
 import getElement from "./utils/getElement.js";
 import addCopyrightToFooter from "./utils/addCopyrightToFooter.js";
+import animateStudyNow from "./utils/animateStudyNow.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     // добавить copyright в футер
     addCopyrightToFooter();
-    techsAnimate();
+    // однократно анимировать текст ("В настоящее время я изучаю...")
+    animateStudyNow();
 });
 
 // инициализируем анимацию AOS
 import AOSConfig from "./utils/AOSconfig.js";
 AOS.init(AOSConfig);
 
-// анимировать текст ("В настоящее время я изучаю...")
-const studyNowSpanClass = ".studyNowSpan";
-const studyNowSpan = getElement(studyNowSpanClass);
-function techsAnimate() {
-    studyNowSpan.textContent = "";
-    gsap.to(studyNowSpanClass, {
-        scrollTrigger: studyNowSpanClass,
-        text: "Node.JS, Express.",
-        delay: 0.6,
-        duration: 3,
-        stagger: 0.5,
-        ease: "power1",
-        // repeat: -1,
-        // repeatDelay: -5
-    });
-}
-
+// повторно анимировать текст ("В настоящее время я изучаю...") при переходе к разделу Обо мне
 const aboutLink = getElement("#aboutLink");
-aboutLink.addEventListener("click", techsAnimate);
+aboutLink.addEventListener("click", animateStudyNow);
 
 const cards = document.querySelectorAll(".card");
 
