@@ -311,7 +311,7 @@ body {
     color: rgb(94, 94, 95);
 }
 
-.spanNews {
+.studyNowSpan {
     min-width: 180px;
     font-weight: 700;
 }
@@ -751,7 +751,7 @@ footer {
         font-size: 18px;
     }
 
-    .spanNews {
+    .studyNowSpan {
         min-width: 170px;
     }
 
@@ -856,7 +856,7 @@ footer {
         min-height: 44px;
     }
 
-    .spanNews {
+    .studyNowSpan {
         min-width: 170px;
     }
 
@@ -967,7 +967,7 @@ footer {
         min-height: 38px;
     }
 
-    .spanNews {
+    .studyNowSpan {
         min-width: 155px;
     }
 

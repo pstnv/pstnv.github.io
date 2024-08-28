@@ -1,10 +1,12 @@
-const footer = document.querySelector(".parFooter");
+import getElement from "./utils/getElement.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     addCopyrightToFooter();
     techsAnimate();
 });
 
+// добавить copyright в футер
+const footer = getElement(".parFooter");
 function addCopyrightToFooter() {
     const today = new Date();
     const year = today.getFullYear();
@@ -33,11 +35,13 @@ AOS.init({
     anchorPlacement: "top-center", // defines which position of the element regarding to window should trigger the animation
 });
 
-// анимация текста
+// анимировать текст ("В настояще время я изучаю...")
+const studyNowSpanClass = ".studyNowSpan";
+const studyNowSpan = getElement(studyNowSpanClass);
 function techsAnimate() {
-    document.querySelector(".spanNews").textContent = "";
-    gsap.to(".spanNews", {
-        scrollTrigger: ".spanNews",
+    studyNowSpan.textContent = "";
+    gsap.to(studyNowSpanClass, {
+        scrollTrigger: studyNowSpanClass,
         text: "Node.JS, Express.",
         delay: 0.6,
         duration: 3,
@@ -48,7 +52,7 @@ function techsAnimate() {
     });
 }
 
-const aboutLink = document.querySelector("#aboutLink");
+const aboutLink = getElement("#aboutLink");
 aboutLink.addEventListener("click", techsAnimate);
 
 const cards = document.querySelectorAll(".card");
@@ -93,7 +97,7 @@ window.addEventListener("click", (event) => {
 });
 
 // если пользователь кликнул на отправку формы, при переходе со страницы форма будет очищена
-const btnSubmit = document.querySelector("#submit");
+const btnSubmit = getElement("#submit");
 btnSubmit.addEventListener("click", () => {
     window.addEventListener("unload", () => {
         resetForm();
@@ -102,11 +106,11 @@ btnSubmit.addEventListener("click", () => {
 
 //функция очистки полей
 function resetForm() {
-    document.querySelector(".formStyle").reset();
+    getElement(".formStyle").reset();
 }
 
 // scroll в начало страницы
-const linkHome = document.querySelector(".linkHome");
+const linkHome = getElement(".linkHome");
 linkHome.addEventListener("click", () => {
     // event.preventDefault();
     window.scrollTo({ top: 0 }) ||
