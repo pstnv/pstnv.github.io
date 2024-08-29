@@ -9,11 +9,11 @@ import {
 import scrollToTop from "./scrollToTop.js";
 
 export {
+    getElement,
     addCopyrightToFooter,
     animateStudyNow,
     clearForm,
     displayCardBackSide,
     handleDisplayAllCardsFront,
-    getElement,
-    scrollToTop
+    scrollToTop,
 };

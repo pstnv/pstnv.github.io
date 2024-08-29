@@ -1,23 +1,22 @@
-// import {
-//     addCopyrightToFooter,
-//     AOSConfig, // конфигурация анимации
-//     animateStudyNow,
-//     getElement,
-//     clearForm,
-//     displayCardBackSide,
-//     handleDisplayAllCardsFront,
-//     scrollToTop,
-// } from "./utils/index.js";
-import addCopyrightToFooter from "./utils/addCopyrightToFooter.js";
-import AOSConfig from "./utils/AOSConfig.js";
-import animateStudyNow from "./utils/animateStudyNow.js";
-import getElement from "./utils/getElement.js";
-import clearForm from "./utils/clearForm.js";
 import {
+    getElement,
+    addCopyrightToFooter,
+    animateStudyNow,
+    clearForm,
     displayCardBackSide,
     handleDisplayAllCardsFront,
-} from "./utils/displayCardSide.js";
-import scrollToTop from "./utils/scrollToTop.js";
+    scrollToTop,
+} from "./utils/index.js";
+// import addCopyrightToFooter from "./utils/addCopyrightToFooter.js";
+import AOSConfig from "./utils/AOSConfig.js";
+// import animateStudyNow from "./utils/animateStudyNow.js";
+// import getElement from "./utils/getElement.js";
+// import clearForm from "./utils/clearForm.js";
+// import {
+//     displayCardBackSide,
+//     handleDisplayAllCardsFront,
+// } from "./utils/displayCardSide.js";
+// import scrollToTop from "./utils/scrollToTop.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     // добавить copyright в футер
