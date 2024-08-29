@@ -4,6 +4,7 @@ import getElement from "./getElement.js";
 // анимировать текст ("В настоящее время я изучаю...")
 const studyNowSpanClass = ".studyNowSpan";
 const studyNowSpan = getElement(studyNowSpanClass);
+
 function animateStudyNow() {
     studyNowSpan.textContent = "";
     gsap.to(studyNowSpanClass, {
