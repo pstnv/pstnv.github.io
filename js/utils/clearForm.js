@@ -1,4 +1,5 @@
-import getElement from "./getElement.js";
+import { getElement } from "./index.js";
+
 const form = getElement("form");
 
 // при переходе со страницы форма будет очищена

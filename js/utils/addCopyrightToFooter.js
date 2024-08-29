@@ -1,4 +1,4 @@
-import getElement from "./getElement.js";
+import { getElement } from "./index.js";
 
 // добавить copyright в футер
 const footer = getElement(".parFooter");

@@ -1,4 +1,4 @@
-const AOSConfig = {
+export default {
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
     startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
@@ -18,5 +18,3 @@ const AOSConfig = {
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: "top-center", // defines which position of the element regarding to window should trigger the animation
 };
-
-export default AOSConfig;

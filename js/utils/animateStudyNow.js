@@ -1,5 +1,4 @@
-import getElement from "./getElement.js";
-
+import { getElement } from "./index.js";
 
 // анимировать текст ("В настоящее время я изучаю...")
 const studyNowSpanClass = ".studyNowSpan";
