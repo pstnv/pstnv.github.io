@@ -2,24 +2,28 @@ import getElement from "./utils/getElement.js";
 import addCopyrightToFooter from "./utils/addCopyrightToFooter.js";
 import animateStudyNow from "./utils/animateStudyNow.js";
 import clearForm from "./utils/clearForm.js";
-
-// инициализируем анимацию AOS
-import AOSConfig from "./utils/AOSconfig.js";
-AOS.init(AOSConfig);
+import {
+    displayCardBackSide,
+    displayAllCardsFront,
+} from "./utils/displayCardSide.js";
+// конфигурация анимации
+import AOSConfig from "./utils/AOSConfig.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     // добавить copyright в футер
     addCopyrightToFooter();
     // однократно анимировать текст ("В настоящее время я изучаю...")
     animateStudyNow();
+    // инициализируем анимацию AOS (срабатывает при startEvent: "DOMContentLoaded")
+    AOS.init(AOSConfig);
 });
+
 
 // повторно анимировать текст ("В настоящее время я изучаю...") при переходе к разделу Обо мне
 const aboutLink = getElement("#aboutLink");
 aboutLink.addEventListener("click", animateStudyNow);
 
 const cards = document.querySelectorAll(".card");
-import {displayCardBackSide, displayAllCardsFront} from "./utils/displayCardSide.js";
 cards.forEach(displayCardBackSide);
 
 // подслушка на окно. При нажатии на любое место, кроме "Подробнее" и "Открыть сайт" - закрывается карточка
