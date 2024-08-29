@@ -6,6 +6,7 @@ import {
     displayCardBackSide,
     handleDisplayAllCardsFront,
 } from "./utils/displayCardSide.js";
+import scrollToTop from "./utils/scrollToTop.js";
 // конфигурация анимации
 import AOSConfig from "./utils/AOSConfig.js";
 
@@ -34,10 +35,6 @@ window.addEventListener("click", handleDisplayAllCardsFront);
 const form = getElement("form");
 form.addEventListener("submit", clearForm);
 
-// scroll в начало страницы
+// при клике по стрелке - scroll в начало страницы
 const linkHome = getElement(".linkHome");
-linkHome.addEventListener("click", () => {
-    // event.preventDefault();
-    window.scrollTo({ top: 0 }) ||
-        document.documentElement.scrollTo({ top: 0 });
-});
+linkHome.addEventListener("click", scrollToTop);
