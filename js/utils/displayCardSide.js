@@ -25,9 +25,15 @@ function displayAllCardsFront(cards) {
 }
 
 export function handleDisplayAllCardsFront(e) {
+    // клик по карте?
     const card = e.target.closest(".card");
-    if (!card) {
-        const cards = document.querySelectorAll(".card");
+    // одна из карт открыта?
+    const cards = document.querySelectorAll(".card");
+    const someCardOpened = [...cards].find(
+        (card) => !card.classList.contains("displayFrontCard")
+    );
+    // если клик не по карте и одна из карт открыта, то закрываем карту
+    if (!card && someCardOpened) {
         displayAllCardsFront(cards);
     }
 }
