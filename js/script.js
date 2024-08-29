@@ -1,4 +1,5 @@
 import {
+    AOSConfig,
     getElement,
     addCopyrightToFooter,
     animateStudyNow,
@@ -7,7 +8,7 @@ import {
     handleDisplayAllCardsFront,
     scrollToTop,
 } from "./utils/index.js";
-import AOSConfig from "./utils/AOSConfig.js";
+// import AOSConfig from "./utils/AOSConfig.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     // добавить copyright в футер

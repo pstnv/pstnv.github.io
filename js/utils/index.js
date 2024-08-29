@@ -7,8 +7,10 @@ import {
     handleDisplayAllCardsFront,
 } from "./displayCardSide.js";
 import scrollToTop from "./scrollToTop.js";
+import AOSConfig from "./AOSConfig.js";
 
 export {
+    AOSConfig,
     getElement,
     addCopyrightToFooter,
     animateStudyNow,
