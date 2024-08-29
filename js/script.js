@@ -12,10 +12,10 @@ import AOSConfig from "./utils/AOSConfig.js";
 window.addEventListener("DOMContentLoaded", () => {
     // добавить copyright в футер
     addCopyrightToFooter();
-    // однократно анимировать текст ("В настоящее время я изучаю...")
-    animateStudyNow();
     // инициализируем анимацию AOS (срабатывает при startEvent: "DOMContentLoaded")
     AOS.init(AOSConfig);
+    // однократно анимировать текст ("В настоящее время я изучаю...")
+    animateStudyNow();
 });
 
 
