@@ -19,37 +19,43 @@ const aboutLink = getElement("#aboutLink");
 aboutLink.addEventListener("click", animateStudyNow);
 
 const cards = document.querySelectorAll(".card");
+
+// подслушка на "Подробнее". При нажатии - открываем описание (cardBack)
 cards.forEach((card) => {
-    card.addEventListener("click", (e) => {
-        const moreInfo = e.target.classList.contains("moreInfo");
-        if (moreInfo) {
-            // отобразить все карточки лицевой стороной
-            displayCardsFrontSide();
-            // отобразить выбранную карту тыльной стороной
-            card.classList.remove("displayFrontCard");
-            // ставим таймер: даст задержку исполнения на плавный фон
-            setTimeout(() => {
-                const cardBack = card.querySelector(".cardBack");
-                cardBack.classList.add("background-fade");
-            }, 0);
-        }
+    card.querySelector(".moreInfo").addEventListener("click", () => {
+        showFrontCard();
+        card.querySelector(".cardBack").style.display = "block";
+        // ставим таймер: даст задержку исполнения
+        setTimeout(() => {
+            card.querySelector(".cardBack").classList.add("backgroundEnd");
+            card.querySelector(".headerFront").classList.add(
+                "headerFrontHidden"
+            );
+        }, 0);
+        setTimeout(() => {
+            card.querySelector(".cardBackText").style.display = "flex";
+        }, 500);
     });
 });
 
-function displayCardsFrontSide() {
+function showFrontCard() {
     cards.forEach((card) => {
-        // закрыть карту
-        card.classList.add("displayFrontCard");
-        const cardBack = card.querySelector(".cardBack");
-        cardBack.classList.remove("background-fade");
+        card.querySelector(".headerFront").classList.remove(
+            "headerFrontHidden"
+        );
+        card.querySelector(".cardBackText").style.display = "none";
+        card.querySelector(".cardBack").classList.remove("backgroundEnd");
+        card.querySelector(".cardBack").style.display = "none";
     });
 }
 
 // подслушка на окно. При нажатии на любое место, кроме "Подробнее" и "Открыть сайт" - закрывается карточка
-window.addEventListener("click", (e) => {
-    const card = e.target.closest(".card");
-    if (!card) {
-        displayCardsFrontSide();
+window.addEventListener("click", (event) => {
+    if (
+        !event.target.classList.contains("moreInfo") &
+        !event.target.classList.contains("linkVisit")
+    ) {
+        showFrontCard();
     }
 });
 
