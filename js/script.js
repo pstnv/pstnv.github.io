@@ -19,37 +19,14 @@ const aboutLink = getElement("#aboutLink");
 aboutLink.addEventListener("click", animateStudyNow);
 
 const cards = document.querySelectorAll(".card");
-cards.forEach((card) => {
-    card.addEventListener("click", (e) => {
-        const moreInfo = e.target.classList.contains("moreInfo");
-        if (moreInfo) {
-            // отобразить все карточки лицевой стороной
-            displayCardsFrontSide();
-            // отобразить выбранную карту тыльной стороной
-            card.classList.remove("displayFrontCard");
-            // ставим таймер: даст задержку исполнения на плавный фон
-            setTimeout(() => {
-                const cardBack = card.querySelector(".cardBack");
-                cardBack.classList.add("background-fade");
-            }, 0);
-        }
-    });
-});
-
-function displayCardsFrontSide() {
-    cards.forEach((card) => {
-        // закрыть карту
-        card.classList.add("displayFrontCard");
-        const cardBack = card.querySelector(".cardBack");
-        cardBack.classList.remove("background-fade");
-    });
-}
+import {displayCardBackSide, displayAllCardsFront} from "./utils/displayCardSide.js";
+cards.forEach(displayCardBackSide);
 
 // подслушка на окно. При нажатии на любое место, кроме "Подробнее" и "Открыть сайт" - закрывается карточка
 window.addEventListener("click", (e) => {
     const card = e.target.closest(".card");
     if (!card) {
-        displayCardsFrontSide();
+        displayAllCardsFront(cards);
     }
 });
 
