@@ -1,6 +1,11 @@
 import getElement from "./utils/getElement.js";
 import addCopyrightToFooter from "./utils/addCopyrightToFooter.js";
 import animateStudyNow from "./utils/animateStudyNow.js";
+import clearForm from "./utils/clearForm.js";
+
+// инициализируем анимацию AOS
+import AOSConfig from "./utils/AOSconfig.js";
+AOS.init(AOSConfig);
 
 window.addEventListener("DOMContentLoaded", () => {
     // добавить copyright в футер
@@ -8,10 +13,6 @@ window.addEventListener("DOMContentLoaded", () => {
     // однократно анимировать текст ("В настоящее время я изучаю...")
     animateStudyNow();
 });
-
-// инициализируем анимацию AOS
-import AOSConfig from "./utils/AOSconfig.js";
-AOS.init(AOSConfig);
 
 // повторно анимировать текст ("В настоящее время я изучаю...") при переходе к разделу Обо мне
 const aboutLink = getElement("#aboutLink");
@@ -60,11 +61,7 @@ window.addEventListener("click", (event) => {
 
 // если пользователь кликнул на отправку формы, при переходе со страницы форма будет очищена
 const form = getElement("form");
-form.addEventListener("submit", () => {
-    window.addEventListener("unload", () => {
-        form.reset();
-    });
-});
+form.addEventListener("submit", clearForm);
 
 // scroll в начало страницы
 const linkHome = getElement(".linkHome");
