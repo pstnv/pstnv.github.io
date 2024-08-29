@@ -4,7 +4,7 @@ import animateStudyNow from "./utils/animateStudyNow.js";
 import clearForm from "./utils/clearForm.js";
 import {
     displayCardBackSide,
-    displayAllCardsFront,
+    handleDisplayAllCardsFront,
 } from "./utils/displayCardSide.js";
 // конфигурация анимации
 import AOSConfig from "./utils/AOSConfig.js";
@@ -18,21 +18,17 @@ window.addEventListener("DOMContentLoaded", () => {
     animateStudyNow();
 });
 
-
 // повторно анимировать текст ("В настоящее время я изучаю...") при переходе к разделу Обо мне
 const aboutLink = getElement("#aboutLink");
 aboutLink.addEventListener("click", animateStudyNow);
 
+// отобразить описание карточки (при клике по ней)
 const cards = document.querySelectorAll(".card");
 cards.forEach(displayCardBackSide);
 
-// подслушка на окно. При нажатии на любое место, кроме "Подробнее" и "Открыть сайт" - закрывается карточка
-window.addEventListener("click", (e) => {
-    const card = e.target.closest(".card");
-    if (!card) {
-        displayAllCardsFront(cards);
-    }
-});
+// поддерживать закрытое сотояние карточек
+// закрывать карточку при нажатии на любое другое место
+window.addEventListener("click", handleDisplayAllCardsFront);
 
 // если пользователь кликнул на отправку формы, при переходе со страницы форма будет очищена
 const form = getElement("form");

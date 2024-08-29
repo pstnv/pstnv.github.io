@@ -15,11 +15,19 @@ export function displayCardBackSide(card, i, cards) {
     });
 }
 
-export function displayAllCardsFront(cards) {
+function displayAllCardsFront(cards) {
     cards.forEach((card) => {
         // закрыть карту
         card.classList.add("displayFrontCard");
         const cardBack = card.querySelector(".cardBack");
         cardBack.classList.remove("background-fade");
     });
+}
+
+export function handleDisplayAllCardsFront(e) {
+    const card = e.target.closest(".card");
+    if (!card) {
+        const cards = document.querySelectorAll(".card");
+        displayAllCardsFront(cards);
+    }
 }
